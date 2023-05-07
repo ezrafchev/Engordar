@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC e TMB</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora IMC e TMB</h1>
+        
+        <form id="imc-form">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" step="0.1">
+            
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" step="0.1">
+            
+            <label for="idade">Idade (anos):</label>
+            <input type="number" id="idade">
+            
+            <label for="fator-atividade">Fator de Atividade Física:</label>
+            <input type="number" id="fator-atividade" step="0.01">
+            
+            <label for="peso-ganhar">Peso a Ganhar (kg):</label>
+            <input type="number" id="peso-ganhar" step="0.1">
+            
+            <label for="dias">Dias:</label>
+            <input type="number" id="dias">
+            
+            <button type="submit">Calcular</button>
+        </form>
+        
+        <div id="resultado">
+            <p>Classificação do IMC: <span id="resultado-imc"></span></p>
+            <p>Taxa Metabólica Basal (TMB): <span id="resultado-tmb"></span></p>
+            <p>Necessidade Calórica Diária (NCD): <span id="resultado-ncd"></span></p>
+            <p>Calorias para ganhar peso: <span id="resultado-calorias"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
